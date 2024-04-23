@@ -7,6 +7,10 @@ package week_03.object;
 // 3. 객체를 생성하는 방식을 정의한다. (생성자)
 // 4.  행위 (메서드)를 정의한다.
 
+import week_03.parameter.Door;
+import week_03.parameter.Handle;
+import week_03.parameter.Tire;
+
 //image - Car설계그림 참고
 public class Car {
 

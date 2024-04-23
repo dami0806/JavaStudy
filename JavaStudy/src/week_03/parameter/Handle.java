@@ -1,4 +1,4 @@
-package week_03.object;
+package week_03.parameter;
 
 public class Handle {
     public Handle() {
