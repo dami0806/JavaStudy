@@ -1,4 +1,4 @@
-package week_04;
+package week_04.exceptionSample;
 
 public class OurClass {
     private final boolean just = true;

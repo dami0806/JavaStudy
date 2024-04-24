@@ -1,4 +1,4 @@
-package week_04;
+package week_04.exceptionSample;
 
 public class StudyException {
     public static void main(String[] args) throws OurBadException {
