@@ -11,7 +11,7 @@ public class Main {
             String operator;
             int firstNumber, secondNumber;
 
-            System.out.println("연산자를 입력하세요 (+, -, *, /): ");
+            System.out.println("연산자를 입력하세요 (+, -, *, /, %): ");
             operator = br.readLine();
 
             System.out.println("firstNumber를 적어주세요: ");

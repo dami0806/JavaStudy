@@ -25,7 +25,12 @@ public class Calculator {
                 if (secondNumber == 0) {
                     throw new IllegalArgumentException("0으로 나눌 수 없습니다.");
                 }
-                return (double)firstNumber / secondNumber;
+                return (double) firstNumber / secondNumber;
+            case "%":
+                if (secondNumber == 0) {
+                    throw new IllegalArgumentException("0으로 나눌 수 없습니다.");
+                }
+                return (double) firstNumber % secondNumber;
             default:
                 throw new IllegalArgumentException("유효하지 않은 연산자 입니다.");
         }
