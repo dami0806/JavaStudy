@@ -14,11 +14,15 @@ import java.io.InputStreamReader;
 - 관계를 맺은 후 필요하다면 Calculator 클래스의 내부 코드를 변경합니다.
     - 나머지 연산자(%) 기능은 제외합니다.
 - Step 2 와 비교하여 어떠한 점이 개선되었는지 생각하기.
-    - hint. 클래스의 책임(단일 책임 원칙)
+   클래스의 책임(단일 책임 원칙)
+
+4️⃣ AddOperation(더하기), SubstractOperation(빼기), MultiplyOperation(곱하기), DivideOperation(나누기) 연산 클래스들을 AbstractOperation(추상 클래스)를 사용하여 추상화하고 Calculator 클래스의 내부 코드를 변경합니다.
+
+- Step 3 와 비교해서 어떠한 점이 개선되었는지 생각하기
+   클래스 간의 결합도, 의존성(의존성 역전 원칙)
  */
 public class Main {
     public static void main(String[] args) {
-
 
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             String operator;
@@ -34,7 +38,7 @@ public class Main {
             secondNumber = Integer.parseInt(br.readLine());
 
             Calculator cal = new Calculator();
-            double answer = cal.calculate (operator, firstNumber, secondNumber);
+            double answer = cal.calculate(operator, firstNumber, secondNumber);
 
             System.out.printf("%d %s %d = %.2f", firstNumber, operator, secondNumber, answer);
 
