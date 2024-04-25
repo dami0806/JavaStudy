@@ -1,4 +1,4 @@
-package week_05.sleep.interrupt;
+package week_05.stat.interrupt;
 
 // 1. 쓰레드가 start()된 후 동작하다가 interrupt() 만났을때 catch문 빠지는지 확인
 // 2. interruped 상태가 true인거 확인
