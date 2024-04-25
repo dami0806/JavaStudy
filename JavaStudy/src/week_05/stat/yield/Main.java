@@ -1,0 +1,31 @@
+package week_05.stat.yield;
+
+public class Main {
+    public static void main(String[] args) {
+        Runnable task = () -> {
+            try {
+                for (int i = 0; i < 10; i++) {
+                    Thread.sleep(1000);
+                    System.out.println(Thread.currentThread().getName());
+                }
+            } catch (InterruptedException e) {
+                Thread.yield();
+            }
+        };
+
+        Thread thread1 = new Thread(task, "thread1");
+        Thread thread2 = new Thread(task, "thread2");
+
+        thread1.start(); // New -> Runable
+        thread2.start(); // New -> Runable
+
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        thread1.interrupt();
+
+    }
+}
