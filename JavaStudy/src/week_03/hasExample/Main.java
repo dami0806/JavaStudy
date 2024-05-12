@@ -1,6 +1,7 @@
 package week_03.hasExample;
 
 public class Main {
+    //강의에서 Car가 있고 이 car class가 가지고있는 여러가지 다른 객체가 있을때
     public static void main(String[] args) {
         // 자동차 객체 생성
         Car car = new Car("GV80", "Black", 50000000);

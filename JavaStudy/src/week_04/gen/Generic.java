@@ -18,11 +18,12 @@ public class Generic<T> {
     public static void main(String[] args) {
         // 4.제너릭을 통해서 구현한 클래스를 사용하는 부분
         Generic<String> stringGeneric = new Generic<>();     //Generic<Integer> stringGeneric = new Generic<>();
+        Generic<Integer> intGeneric = new Generic<>();
         // 5. 만든객체의 타입: String - "Hello World"정상출력된다.
-        stringGeneric.set("Hello World");                   //  stringGeneric.set(3); //Integer일때 3으로 출력
+        stringGeneric.set("Hello World"); //  stringGeneric.set(3); //Integer일때 3으로 출력
+        intGeneric.set(10);
 
-        String tValueTurnOutWithString = stringGeneric.get();
-
-        System.out.println(tValueTurnOutWithString);        // int tValueTurnOutWithString = stringGeneric.get();
+        System.out.println(stringGeneric.get());        // int tValueTurnOutWithString = stringGeneric.get();
+        System.out.println(intGeneric.get());
     }
 }
